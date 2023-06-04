@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent "myaws"
   stages {
     stage('Verify browsers are installed') {
       steps {
