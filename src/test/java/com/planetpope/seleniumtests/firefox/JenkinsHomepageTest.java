@@ -19,6 +19,7 @@ public class JenkinsHomepageTest extends AbstractJenkinsHomepage {
   void setupTest() {
     FirefoxOptions options = new FirefoxOptions();
     options.addArguments("--headless");
+    options.addArguments("--remote-allow-origins=*");
     driver = new FirefoxDriver(options);
   }
 }
