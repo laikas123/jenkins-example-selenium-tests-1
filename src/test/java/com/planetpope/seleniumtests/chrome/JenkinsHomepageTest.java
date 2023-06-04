@@ -19,6 +19,7 @@ public class JenkinsHomepageTest extends AbstractJenkinsHomepage {
   void setupTest() {
     ChromeOptions options = new ChromeOptions();
     options.addArguments("--headless");
+    options.addArguments("--remote-allow-origins=*");
     driver = new ChromeDriver(options);
   }
 }
