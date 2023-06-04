@@ -17,7 +17,7 @@ public class AbstractJenkinsHomepage {
 
   @Test
   void test() {
-    driver.get("https://www.jenkins.io/");
+    driver.get("https://www.screenpal.com/");
     Assertions.assertEquals("Jenkins", driver.getTitle());
   }
 }
