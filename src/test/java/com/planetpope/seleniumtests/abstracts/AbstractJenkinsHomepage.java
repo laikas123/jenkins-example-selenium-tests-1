@@ -17,6 +17,7 @@ public class AbstractJenkinsHomepage {
 
   @Test
   void test() {
+    System.setProperty("webdriver.http.factory", "jdk-http-client");
     driver.get("https://www.screenpal.com/");
     Assertions.assertEquals("Jenkins", driver.getTitle());
   }
